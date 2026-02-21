@@ -118,7 +118,7 @@ Google Colab
 
 Clone the repository:
 
-git clone https://github.com/your-username/cats-vs-dogs-classification.git
+git clone https:[//github.com/your-username/cats-vs-dogs-classification.git](https://github.com/OmarAhmed770/Cats-vs-Dogs-Image-Classification-CNN-.git)
 
 Install dependencies:
 
