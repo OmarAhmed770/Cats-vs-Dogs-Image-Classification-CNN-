@@ -1,7 +1,7 @@
 # Cats-vs-Dogs-Image-Classification-CNN-
 This project implements a Convolutional Neural Network (CNN) using TensorFlow and Keras to classify images of cats and dogs. The model is trained on the Cats vs Dogs dataset from TensorFlow Datasets (TFDS) and achieves 82% test accuracy.
-📌 Project Overview
 
+📌 Project Overview
 The goal of this project is to build a deep learning model capable of distinguishing between cat and dog images using supervised learning. The project covers the full machine learning pipeline including data preprocessing, model building, training, evaluation, and prediction.
 
 🧠 Model Architecture
