@@ -1,43 +1,75 @@
-# Cats-vs-Dogs-Image-Classification-CNN-
-This project implements a Convolutional Neural Network (CNN) using TensorFlow and Keras to classify images of cats and dogs. The model is trained on the Cats vs Dogs dataset from TensorFlow Datasets (TFDS) and achieves 82% test accuracy.
+Cats vs Dogs Image Classification using CNN
 
-#📌 Project Overview
+A deep learning project that classifies images of cats and dogs using a Convolutional Neural Network (CNN) built with TensorFlow and Keras.
 
-The goal of this project is to build a deep learning model capable of distinguishing between cat and dog images using supervised learning. The project covers the full machine learning pipeline including data preprocessing, model building, training, evaluation, and prediction.
+The model is trained on the Cats vs Dogs dataset from TensorFlow Datasets (TFDS) and achieves 82% test accuracy.
 
-#🧠 Model Architecture
+📌 Project Overview
 
-The CNN architecture consists of:
+This project demonstrates an end-to-end deep learning pipeline for binary image classification.
 
-3 Convolutional (Conv2D) layers with ReLU activation
+It includes:
 
-3 MaxPooling layers
+Data loading and preprocessing
 
-Flatten layer
+CNN model design and implementation
 
-Fully connected Dense layer (128 units)
+Model training and validation
 
-Dropout layer (0.5) for regularization
+Performance evaluation using multiple metrics
 
-Output layer with Sigmoid activation (Binary Classification)
+Confusion matrix visualization
 
-#⚙️ Data Preprocessing
+Real-time prediction on custom images
+
+The goal is to build a reliable image classifier that distinguishes between cats and dogs.
+
+🧠 Model Architecture
+
+The Convolutional Neural Network consists of:
+
+Conv2D (32 filters, 3×3) + ReLU
+
+MaxPooling2D
+
+Conv2D (64 filters, 3×3) + ReLU
+
+MaxPooling2D
+
+Conv2D (128 filters, 3×3) + ReLU
+
+MaxPooling2D
+
+Flatten
+
+Dense (128 units, ReLU)
+
+Dropout (0.5)
+
+Output Layer (1 unit, Sigmoid activation)
+
+Loss Function: Binary Crossentropy
+Optimizer: Adam
+
+⚙️ Data Preprocessing
 
 Dataset loaded using TensorFlow Datasets (TFDS)
 
-80/20 Train-Test split
+80% training / 20% testing split
 
 Images resized to 150×150
 
-Pixel normalization (scaled to range 0–1)
+Pixel values normalized to range [0,1]
 
-Batched and optimized using prefetching
+Batching and prefetching for performance optimization
 
-#📊 Model Performance
+📊 Model Performance
 
 Test Accuracy: 82%
 
-Evaluation Metrics:
+Loss: ~0.43
+
+Evaluation Metrics Used:
 
 Accuracy
 
@@ -47,19 +79,20 @@ Recall
 
 F1-Score
 
-Confusion Matrix Visualization
+Confusion Matrix
 
-#🚀 Features
+The confusion matrix is visualized using Seaborn heatmaps.
 
-End-to-end deep learning pipeline
+🚀 Features
 
-Model evaluation with multiple performance metrics
+✔ End-to-end deep learning workflow
+✔ CNN-based binary image classification
+✔ Performance evaluation with multiple metrics
+✔ Confusion matrix visualization
+✔ Real-time prediction on uploaded images
+✔ Implemented and tested using Google Colab
 
-Confusion matrix heatmap visualization
-
-Real-time prediction on custom uploaded images (Google Colab supported)
-
-#🛠️ Technologies Used
+🛠️ Technologies Used
 
 Python
 
@@ -74,3 +107,23 @@ Scikit-learn
 Matplotlib
 
 Seaborn
+
+Google Colab
+
+📂 Project Structure
+├── model_training.ipynb / .py
+├── evaluation_metrics.py
+├── README.md
+▶️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/your-username/cats-vs-dogs-classification.git
+
+Install dependencies:
+
+pip install tensorflow tensorflow-datasets numpy scikit-learn matplotlib seaborn
+
+Run the notebook or Python script to train the model.
+
+Upload a custom image to test real-time prediction.
